@@ -125,48 +125,6 @@ pip install -r requirements.txt
 
 ---
 
-## How to Run the Project
-
-### 1. Inference on an image or video
-
-```bash
-python demo.py --source data/example.jpg --weights data/weights/yolopv2.pt
-```
-
-Common arguments:
-
-| Flag | Description |
-|------|-------------|
-| `--source` | Path to image, video file, or folder |
-| `--weights` | Path to model weights |
-| `--img-size` | Input resolution (default 640) |
-| `--conf-thres` | Detection confidence threshold |
-| `--device` | `cpu` or GPU index (e.g. `0`) |
-
-### 2. Train the model
-
-```bash
-python train.py --data data/bdd100k --weights data/weights/yolopv2.pt --epochs 100
-```
-
-Outputs (checkpoints, loss/metric logs, plots) are saved under `runs/train/`.
-
-### 3. Evaluate the model
-
-```bash
-python evaluate.py --weights data/weights/yolopv2.pt --data data/bdd100k
-```
-
-Per-task metrics, JSON summaries, and plots are written to `runs/test/`.
-
-### 4. Benchmark inference speed
-
-```bash
-python benchmark.py --weights data/weights/yolopv2.pt --device 0
-```
-
----
-
 ## Results & Performance Metrics
 
 All results below are obtained from the actual experiments stored under `runs/test/` of this project. The model was evaluated on **3,426 BDD100K images** at **640×640** resolution with `conf_threshold = 0.25` and `iou_threshold = 0.45`. Inference benchmarks were performed on an **NVIDIA RTX 6000 Ada Generation** GPU.
