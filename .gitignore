@@ -7,13 +7,6 @@ __pycache__/
 *.pth
 *.onnx
 
-# Large demo media
-data/demo/*.gif
-data/demo/*.mp4
-
-# Datasets
-data/bdd100k/
-
 # Environments / IDE
 .venv/
 venv/
