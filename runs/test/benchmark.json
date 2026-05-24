@@ -1,0 +1,70 @@
+{
+  "device": "cuda:0",
+  "device_name": "NVIDIA RTX 6000 Ada Generation",
+  "weights": "runs/train/last.pt",
+  "img_size": 640,
+  "half_precision": false,
+  "model": {
+    "total_parameters": 23404394,
+    "total_parameters_M": 23.404,
+    "trainable_parameters": 23404394,
+    "checkpoint_size_MB": 187.618,
+    "param_plus_buffer_MB_fp32": 93.774
+  },
+  "batches": [
+    {
+      "batch_size": 1,
+      "iterations": 100,
+      "total_frames": 100,
+      "elapsed_sec": 0.4855,
+      "ms_per_frame": 4.8549,
+      "ms_per_batch": 4.8549,
+      "fps": 205.98
+    },
+    {
+      "batch_size": 4,
+      "iterations": 25,
+      "total_frames": 100,
+      "elapsed_sec": 0.2096,
+      "ms_per_frame": 2.0964,
+      "ms_per_batch": 8.3856,
+      "fps": 477.01
+    },
+    {
+      "batch_size": 8,
+      "iterations": 12,
+      "total_frames": 96,
+      "elapsed_sec": 0.2024,
+      "ms_per_frame": 2.1085,
+      "ms_per_batch": 16.868,
+      "fps": 474.27
+    },
+    {
+      "batch_size": 16,
+      "iterations": 10,
+      "total_frames": 160,
+      "elapsed_sec": 0.3705,
+      "ms_per_frame": 2.3153,
+      "ms_per_batch": 37.0453,
+      "fps": 431.9
+    },
+    {
+      "batch_size": 32,
+      "iterations": 10,
+      "total_frames": 320,
+      "elapsed_sec": 0.8084,
+      "ms_per_frame": 2.5261,
+      "ms_per_batch": 80.8366,
+      "fps": 395.86
+    }
+  ],
+  "single_frame": {
+    "batch_size": 1,
+    "iterations": 100,
+    "total_frames": 100,
+    "elapsed_sec": 0.4855,
+    "ms_per_frame": 4.8549,
+    "ms_per_batch": 4.8549,
+    "fps": 205.98
+  }
+}

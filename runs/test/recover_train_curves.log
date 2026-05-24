@@ -1,0 +1,88 @@
+Loading labeled training subset (require_labels=True)...
+Loading BDD100K train labels...
+  Found 3426 seg images, 3426 with det labels (train, require_labels=True)
+  Eval sample size: 320
+Found 20 checkpoints: [4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, 79, 84, 89, 94, 99]
+
+Checkpoint epoch 4: epoch_4.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=6.8s  losses={'total': 0.4065, 'det': 0.2914, 'da': 0.1224, 'll': 0.7976, 'box': 0.0794, 'obj': 0.0733, 'cls': 0.1388}
+
+Checkpoint epoch 9: epoch_9.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.4s  losses={'total': 0.3549, 'det': 0.2466, 'da': 0.1102, 'll': 0.7559, 'box': 0.0702, 'obj': 0.0701, 'cls': 0.1063}
+
+Checkpoint epoch 14: epoch_14.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.334, 'det': 0.2283, 'da': 0.1063, 'll': 0.7391, 'box': 0.0667, 'obj': 0.069, 'cls': 0.0926}
+
+Checkpoint epoch 19: epoch_19.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.4s  losses={'total': 0.3059, 'det': 0.2028, 'da': 0.1023, 'll': 0.7221, 'box': 0.0635, 'obj': 0.0707, 'cls': 0.0686}
+
+Checkpoint epoch 24: epoch_24.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=5.6s  losses={'total': 0.2799, 'det': 0.1783, 'da': 0.1003, 'll': 0.7126, 'box': 0.061, 'obj': 0.0651, 'cls': 0.0522}
+
+Checkpoint epoch 29: epoch_29.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.4s  losses={'total': 0.2729, 'det': 0.1708, 'da': 0.0944, 'll': 0.723, 'box': 0.0587, 'obj': 0.0683, 'cls': 0.0439}
+
+Checkpoint epoch 34: epoch_34.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.4s  losses={'total': 0.2536, 'det': 0.1562, 'da': 0.0913, 'll': 0.6884, 'box': 0.057, 'obj': 0.0643, 'cls': 0.0349}
+
+Checkpoint epoch 39: epoch_39.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.4s  losses={'total': 0.2466, 'det': 0.1464, 'da': 0.0909, 'll': 0.7112, 'box': 0.0548, 'obj': 0.0654, 'cls': 0.0261}
+
+Checkpoint epoch 44: epoch_44.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.2s  losses={'total': 0.23, 'det': 0.1374, 'da': 0.0884, 'll': 0.6529, 'box': 0.0535, 'obj': 0.0609, 'cls': 0.023}
+
+Checkpoint epoch 49: epoch_49.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.2142, 'det': 0.1247, 'da': 0.0835, 'll': 0.6322, 'box': 0.0503, 'obj': 0.0582, 'cls': 0.0163}
+
+Checkpoint epoch 54: epoch_54.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.2058, 'det': 0.1184, 'da': 0.0833, 'll': 0.6157, 'box': 0.0488, 'obj': 0.0552, 'cls': 0.0145}
+
+Checkpoint epoch 59: epoch_59.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.1853, 'det': 0.1028, 'da': 0.0706, 'll': 0.5898, 'box': 0.0449, 'obj': 0.0474, 'cls': 0.0105}
+
+Checkpoint epoch 64: epoch_64.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.2s  losses={'total': 0.176, 'det': 0.097, 'da': 0.0606, 'll': 0.5716, 'box': 0.0432, 'obj': 0.0443, 'cls': 0.0094}
+
+Checkpoint epoch 69: epoch_69.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.1671, 'det': 0.0914, 'da': 0.0502, 'll': 0.555, 'box': 0.0413, 'obj': 0.0417, 'cls': 0.0084}
+
+Checkpoint epoch 74: epoch_74.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.2s  losses={'total': 0.1609, 'det': 0.0877, 'da': 0.0442, 'll': 0.5414, 'box': 0.0397, 'obj': 0.0401, 'cls': 0.0079}
+
+Checkpoint epoch 79: epoch_79.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.1546, 'det': 0.083, 'da': 0.0411, 'll': 0.5314, 'box': 0.0375, 'obj': 0.0382, 'cls': 0.0073}
+
+Checkpoint epoch 84: epoch_84.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.4s  losses={'total': 0.1502, 'det': 0.0802, 'da': 0.0383, 'll': 0.5219, 'box': 0.0364, 'obj': 0.0368, 'cls': 0.007}
+
+Checkpoint epoch 89: epoch_89.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.1483, 'det': 0.0788, 'da': 0.0373, 'll': 0.5183, 'box': 0.0357, 'obj': 0.0362, 'cls': 0.0068}
+
+Checkpoint epoch 94: epoch_94.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.3s  losses={'total': 0.1468, 'det': 0.0777, 'da': 0.0367, 'll': 0.5157, 'box': 0.0353, 'obj': 0.0357, 'cls': 0.0068}
+
+Checkpoint epoch 99: epoch_99.pt
+YOLOPv2 created: 23.4M parameters
+  batches=40  elapsed=2.2s  losses={'total': 0.1461, 'det': 0.0773, 'da': 0.0365, 'll': 0.5141, 'box': 0.035, 'obj': 0.0355, 'cls': 0.0067}
+
+Saved raw curves to runs/test/plots/train_curves.json
+Saved plots to runs/test/plots/

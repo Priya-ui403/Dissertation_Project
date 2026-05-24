@@ -1,0 +1,165 @@
+{
+  "detection": {
+    "mAP@0.5": 0.6763,
+    "mAP@0.5:0.95": 0.4039,
+    "vehicle_mAP@0.5": 0.8273,
+    "vehicle_mAP@0.5:0.95": 0.5923,
+    "per_class": {
+      "car": {
+        "AP@0.5": 0.7104,
+        "AP@0.5:0.95": 0.4812
+      },
+      "bus": {
+        "AP@0.5": 0.8813,
+        "AP@0.5:0.95": 0.641
+      },
+      "truck": {
+        "AP@0.5": 0.8904,
+        "AP@0.5:0.95": 0.6547
+      },
+      "person": {
+        "AP@0.5": 0.6172,
+        "AP@0.5:0.95": 0.3089
+      },
+      "rider": {
+        "AP@0.5": 0.7065,
+        "AP@0.5:0.95": 0.3618
+      },
+      "bike": {
+        "AP@0.5": 0.6998,
+        "AP@0.5:0.95": 0.365
+      },
+      "motor": {
+        "AP@0.5": 0.7653,
+        "AP@0.5:0.95": 0.4632
+      },
+      "traffic light": {
+        "AP@0.5": 0.5032,
+        "AP@0.5:0.95": 0.2053
+      },
+      "traffic sign": {
+        "AP@0.5": 0.5847,
+        "AP@0.5:0.95": 0.3087
+      },
+      "train": {
+        "AP@0.5": 0.4048,
+        "AP@0.5:0.95": 0.2492
+      }
+    },
+    "total_gt_boxes": 67622,
+    "conf_threshold_for_PRF1": 0.25,
+    "overall_PRF1@IoU0.5": {
+      "precision": 0.7391,
+      "recall": 0.6839,
+      "f1": 0.7104,
+      "tp": 46244,
+      "fp": 16322,
+      "fn": 21378
+    },
+    "per_class_PRF1@IoU0.5": {
+      "car": {
+        "precision": 0.7786,
+        "recall": 0.7254,
+        "f1": 0.751,
+        "tp": 26924,
+        "fp": 7655,
+        "fn": 10194
+      },
+      "bus": {
+        "precision": 0.7405,
+        "recall": 0.8934,
+        "f1": 0.8098,
+        "tp": 645,
+        "fp": 226,
+        "fn": 77
+      },
+      "truck": {
+        "precision": 0.7709,
+        "recall": 0.898,
+        "f1": 0.8296,
+        "tp": 1716,
+        "fp": 510,
+        "fn": 195
+      },
+      "person": {
+        "precision": 0.6214,
+        "recall": 0.659,
+        "f1": 0.6396,
+        "tp": 3796,
+        "fp": 2313,
+        "fn": 1964
+      },
+      "rider": {
+        "precision": 0.5816,
+        "recall": 0.7525,
+        "f1": 0.6561,
+        "tp": 228,
+        "fp": 164,
+        "fn": 75
+      },
+      "bike": {
+        "precision": 0.5871,
+        "recall": 0.7484,
+        "f1": 0.658,
+        "tp": 354,
+        "fp": 249,
+        "fn": 119
+      },
+      "motor": {
+        "precision": 0.6353,
+        "recall": 0.8009,
+        "f1": 0.7086,
+        "tp": 169,
+        "fp": 97,
+        "fn": 42
+      },
+      "traffic light": {
+        "precision": 0.6528,
+        "recall": 0.5586,
+        "f1": 0.602,
+        "tp": 4789,
+        "fp": 2547,
+        "fn": 3784
+      },
+      "traffic sign": {
+        "precision": 0.7489,
+        "recall": 0.6076,
+        "f1": 0.6709,
+        "tp": 7613,
+        "fp": 2553,
+        "fn": 4916
+      },
+      "train": {
+        "precision": 0.5556,
+        "recall": 0.4545,
+        "f1": 0.5,
+        "tp": 10,
+        "fp": 8,
+        "fn": 12
+      }
+    }
+  },
+  "drivable_area_segmentation": {
+    "mIoU": 0.9472,
+    "pixel_accuracy": 0.9873,
+    "background_IoU": 0.9854,
+    "drivable_IoU": 0.909
+  },
+  "lane_line_segmentation": {
+    "mIoU": 0.6932,
+    "pixel_accuracy": 0.9923,
+    "background_IoU": 0.9923,
+    "lane_IoU": 0.3942
+  },
+  "meta": {
+    "weights": "runs/train/last.pt",
+    "split": "train",
+    "require_labels": true,
+    "num_eval_images": 3426,
+    "img_size": 640,
+    "conf_threshold": 0.25,
+    "iou_threshold": 0.45,
+    "inference_time_sec": 68.42,
+    "fps": 50.07
+  }
+}

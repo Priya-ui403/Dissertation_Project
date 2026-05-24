@@ -1,0 +1,11 @@
+Loading runs/train/last.pt...
+YOLOPv2 created: 23.4M parameters
+Loading labeled subset (split=train, require_labels=True)...
+Loading BDD100K train labels...
+  Found 3426 seg images, 3426 with det labels (train, require_labels=True)
+  3426 labeled images
+  Categorized: night=137  rain=253  crowded(>=33 obj)=372
+  Total unique images to render: 86
+
+Done. Saved: {'random': 50, 'night': 12, 'rain': 12, 'crowded': 12}
+Manifest: runs/test/visualizations/manifest.json

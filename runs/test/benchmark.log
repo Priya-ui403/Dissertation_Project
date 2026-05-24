@@ -1,0 +1,24 @@
+Device: cuda:0
+Loading runs/train/last.pt...
+YOLOPv2 created: 23.4M parameters
+  Parameters: 23,404,394 (23.40M)
+  Checkpoint size: 187.62 MB
+  Params+buffers (fp32): 93.77 MB
+
+--- batch size 1 ---
+  iters=100  total_frames=100  elapsed=0.49s
+  ms/frame: 4.855  ms/batch: 4.855  FPS: 206.0
+--- batch size 4 ---
+  iters=25  total_frames=100  elapsed=0.21s
+  ms/frame: 2.096  ms/batch: 8.386  FPS: 477.0
+--- batch size 8 ---
+  iters=12  total_frames=96  elapsed=0.20s
+  ms/frame: 2.108  ms/batch: 16.868  FPS: 474.3
+--- batch size 16 ---
+  iters=10  total_frames=160  elapsed=0.37s
+  ms/frame: 2.315  ms/batch: 37.045  FPS: 431.9
+--- batch size 32 ---
+  iters=10  total_frames=320  elapsed=0.81s
+  ms/frame: 2.526  ms/batch: 80.837  FPS: 395.9
+
+Saved benchmark to runs/test/benchmark.json

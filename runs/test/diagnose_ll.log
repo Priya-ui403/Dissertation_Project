@@ -1,0 +1,48 @@
+Loading model from runs/train/last.pt...
+YOLOPv2 created: 23.4M parameters
+  Loaded epoch 99 checkpoint
+Loading dataset (split=train, require_labels=True)...
+Loading BDD100K train labels...
+  Found 3426 seg images, 3426 with det labels (train, require_labels=True)
+  3426 val images
+
+Sweeping thresholds: [0.1, 0.2, 0.3, 0.4, 0.5]
+
+=== LL Threshold Sweep ===
+   thr |     IoU | precision |  recall | pixel_acc | pred_frac
+ 0.100 |  0.3685 |    0.4166 |  0.7615 |    0.9906 |  0.013168
+ 0.200 |  0.3806 |    0.4389 |  0.7412 |    0.9913 |  0.012164
+ 0.300 |  0.3872 |    0.4538 |  0.7254 |    0.9917 |  0.011516
+ 0.400 |  0.3915 |    0.4657 |  0.7108 |    0.9920 |  0.010994
+ 0.500 |  0.3942 |    0.4764 |  0.6955 |    0.9923 |  0.010515
+
+Best IoU: 0.3942 at threshold 0.5
+
+=== Output distribution ===
+{
+  "max_sigmoid_per_image": {
+    "min": 0.002538341097533703,
+    "median": 1.0,
+    "mean": 0.9417919151816475,
+    "max": 1.0,
+    "p90": 1.0,
+    "p99": 1.0
+  },
+  "mean_sigmoid_per_image": {
+    "min": 1.0131881026609335e-05,
+    "median": 0.009350767359137535,
+    "mean": 0.01059018829675097,
+    "max": 0.047474779188632965
+  },
+  "gt_positive_fraction_per_image": {
+    "min": 0.0,
+    "median": 0.006693115234375,
+    "mean": 0.0072034211612485395,
+    "max": 0.03610107421875
+  }
+}
+
+Sweep results saved to runs/test/ll_diagnostics/ll_threshold_sweep.json
+
+Writing 12 diagnostic panels to runs/test/ll_diagnostics/panels/ (threshold=0.3)...
+Done.

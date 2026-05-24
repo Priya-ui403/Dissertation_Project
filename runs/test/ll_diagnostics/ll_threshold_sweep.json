@@ -1,0 +1,76 @@
+{
+  "weights": "runs/train/last.pt",
+  "num_val_images": 3426,
+  "sweep": [
+    {
+      "threshold": 0.1,
+      "IoU": 0.368528,
+      "precision": 0.416602,
+      "recall": 0.761542,
+      "pixel_accuracy": 0.9906,
+      "predicted_positive_fraction": 0.01316774
+    },
+    {
+      "threshold": 0.2,
+      "IoU": 0.380574,
+      "precision": 0.438908,
+      "recall": 0.741164,
+      "pixel_accuracy": 0.99131,
+      "predicted_positive_fraction": 0.01216407
+    },
+    {
+      "threshold": 0.3,
+      "IoU": 0.387245,
+      "precision": 0.45375,
+      "recall": 0.725433,
+      "pixel_accuracy": 0.991731,
+      "predicted_positive_fraction": 0.01151647
+    },
+    {
+      "threshold": 0.4,
+      "IoU": 0.391545,
+      "precision": 0.465734,
+      "recall": 0.710814,
+      "pixel_accuracy": 0.992043,
+      "predicted_positive_fraction": 0.01099401
+    },
+    {
+      "threshold": 0.5,
+      "IoU": 0.394212,
+      "precision": 0.476443,
+      "recall": 0.695497,
+      "pixel_accuracy": 0.992301,
+      "predicted_positive_fraction": 0.01051534
+    }
+  ],
+  "best": {
+    "threshold": 0.5,
+    "IoU": 0.394212,
+    "precision": 0.476443,
+    "recall": 0.695497,
+    "pixel_accuracy": 0.992301,
+    "predicted_positive_fraction": 0.01051534
+  },
+  "distribution": {
+    "max_sigmoid_per_image": {
+      "min": 0.002538341097533703,
+      "median": 1.0,
+      "mean": 0.9417919151816475,
+      "max": 1.0,
+      "p90": 1.0,
+      "p99": 1.0
+    },
+    "mean_sigmoid_per_image": {
+      "min": 1.0131881026609335e-05,
+      "median": 0.009350767359137535,
+      "mean": 0.01059018829675097,
+      "max": 0.047474779188632965
+    },
+    "gt_positive_fraction_per_image": {
+      "min": 0.0,
+      "median": 0.006693115234375,
+      "mean": 0.0072034211612485395,
+      "max": 0.03610107421875
+    }
+  }
+}

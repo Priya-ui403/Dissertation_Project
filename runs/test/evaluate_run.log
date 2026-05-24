@@ -1,0 +1,94 @@
+Loading model from runs/train/last.pt...
+YOLOPv2 created: 23.4M parameters
+  Loaded epoch 99 checkpoint
+Loading evaluation dataset (split=train, require_labels=True)...
+Loading BDD100K train labels...
+  Found 3426 seg images, 3426 with det labels (train, require_labels=True)
+  3426 evaluation images
+YOLOPv2 created: 23.4M parameters
+
+=== Running Evaluation ===
+  Processed 160/3426 images...
+  Processed 320/3426 images...
+  Processed 480/3426 images...
+  Processed 640/3426 images...
+  Processed 800/3426 images...
+  Processed 960/3426 images...
+  Processed 1120/3426 images...
+  Processed 1280/3426 images...
+  Processed 1440/3426 images...
+  Processed 1600/3426 images...
+  Processed 1760/3426 images...
+  Processed 1920/3426 images...
+  Processed 2080/3426 images...
+  Processed 2240/3426 images...
+  Processed 2400/3426 images...
+  Processed 2560/3426 images...
+  Processed 2720/3426 images...
+  Processed 2880/3426 images...
+  Processed 3040/3426 images...
+  Processed 3200/3426 images...
+  Processed 3360/3426 images...
+
+Evaluation completed in 68.4s (50.1 img/s)
+
+=== Computing Detection mAP (total GT boxes: 67622) ===
+  mAP@0.5      (all 10 classes): 0.6763
+  mAP@0.5:0.95 (all 10 classes): 0.4039
+  Per-class AP:
+    car             AP@0.5: 0.7104  AP@0.5:0.95: 0.4812
+    bus             AP@0.5: 0.8813  AP@0.5:0.95: 0.6410
+    truck           AP@0.5: 0.8904  AP@0.5:0.95: 0.6547
+    person          AP@0.5: 0.6172  AP@0.5:0.95: 0.3089
+    rider           AP@0.5: 0.7065  AP@0.5:0.95: 0.3618
+    bike            AP@0.5: 0.6998  AP@0.5:0.95: 0.3650
+    motor           AP@0.5: 0.7653  AP@0.5:0.95: 0.4632
+    traffic light   AP@0.5: 0.5032  AP@0.5:0.95: 0.2053
+    traffic sign    AP@0.5: 0.5847  AP@0.5:0.95: 0.3087
+    train           AP@0.5: 0.4048  AP@0.5:0.95: 0.2492
+  Vehicle (car/bus/truck) mAP@0.5:      0.8273
+  Vehicle (car/bus/truck) mAP@0.5:0.95: 0.5923
+
+=== Precision / Recall / F1 @ IoU 0.5 (conf>=0.25) ===
+  Overall  P: 0.7391  R: 0.6839  F1: 0.7104  (TP=46244, FP=16322, FN=21378)
+    car             P: 0.7786  R: 0.7254  F1: 0.7510  (TP=26924, FP=7655, FN=10194)
+    bus             P: 0.7405  R: 0.8934  F1: 0.8098  (TP=645, FP=226, FN=77)
+    truck           P: 0.7709  R: 0.8980  F1: 0.8296  (TP=1716, FP=510, FN=195)
+    person          P: 0.6214  R: 0.6590  F1: 0.6396  (TP=3796, FP=2313, FN=1964)
+    rider           P: 0.5816  R: 0.7525  F1: 0.6561  (TP=228, FP=164, FN=75)
+    bike            P: 0.5871  R: 0.7484  F1: 0.6580  (TP=354, FP=249, FN=119)
+    motor           P: 0.6353  R: 0.8009  F1: 0.7086  (TP=169, FP=97, FN=42)
+    traffic light   P: 0.6528  R: 0.5586  F1: 0.6020  (TP=4789, FP=2547, FN=3784)
+    traffic sign    P: 0.7489  R: 0.6076  F1: 0.6709  (TP=7613, FP=2553, FN=4916)
+    train           P: 0.5556  R: 0.4545  F1: 0.5000  (TP=10, FP=8, FN=12)
+
+=== Segmentation Metrics ===
+  Drivable Area:
+    mIoU:     0.9472
+    Accuracy: 0.9873
+    BG IoU:   0.9854  DA IoU: 0.9090
+  Lane Line:
+    mIoU:     0.6932
+    Accuracy: 0.9923
+    BG IoU:   0.9923  LL IoU: 0.3942
+
+  Metrics saved to runs/test/evaluation_metrics.json
+
+=== Hard Example Mining (top 10) ===
+  #1: 79105e65-a1c48df8.jpg (loss: 1.2863)
+  #2: baf019d9-da5f9843.jpg (loss: 1.2342)
+  #3: 2c4e4802-bfbb9299.jpg (loss: 1.2338)
+  #4: 4f45d5ce-d87a28f1.jpg (loss: 1.2335)
+  #5: 0f9fbe4b-081bb395.jpg (loss: 1.2288)
+  #6: 2bcdafa3-0013d653.jpg (loss: 1.2282)
+  #7: 07576c3b-32ef9ee1.jpg (loss: 1.2258)
+  #8: 33c6cbe6-d0aca98e.jpg (loss: 1.2234)
+  #9: 75cdb8c0-08de301f.jpg (loss: 1.2217)
+  #10: 2e3e8698-72305bda.jpg (loss: 1.2076)
+
+=== Summary ===
+  Visualizations saved: runs/test/visualizations (0 images)
+  Hard examples saved:  runs/test/hard_examples (10 images)
+  Metrics file:         runs/test/evaluation_metrics.json
+
+Done!

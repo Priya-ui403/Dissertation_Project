@@ -1,0 +1,48 @@
+Loading model from runs/train/last.pt...
+YOLOPv2 created: 23.4M parameters
+  Loaded epoch 99 checkpoint
+Loading evaluation dataset (val split)...
+Loading BDD100K val labels...
+  Found 1000 seg images, 0 with det labels (val)
+  1000 validation images
+
+=== Running Evaluation ===
+  Processed 160/1000 images...
+  Processed 320/1000 images...
+  Processed 480/1000 images...
+  Processed 640/1000 images...
+  Processed 800/1000 images...
+  Processed 960/1000 images...
+
+Evaluation completed in 14.2s (70.4 img/s)
+
+=== Segmentation Metrics ===
+  Drivable Area:
+    mIoU:     0.9105
+    Accuracy: 0.9779
+    BG IoU:   0.9749  DA IoU: 0.8462
+  Lane Line:
+    mIoU:     0.4992
+    Accuracy: 0.9984
+    BG IoU:   0.9984  LL IoU: 0.0000
+
+  Metrics saved to runs/test/evaluation_metrics.json
+
+=== Hard Example Mining (top 10) ===
+  #1: ff7b98c7-3cb964ac.jpg (loss: 2.6738)
+  #2: 8ccbdb22-00000000.jpg (loss: 1.9487)
+  #3: 9b2db8cb-00000000.jpg (loss: 1.8679)
+  #4: 7d6eb8b3-208131ff.jpg (loss: 1.8487)
+  #5: a94afbe0-6cdea075.jpg (loss: 1.7701)
+  #6: 7ee2f122-4dbd9d07.jpg (loss: 1.6921)
+  #7: ab94bc5b-9ddc86e4.jpg (loss: 1.6904)
+  #8: 96da1b19-656a87bf.jpg (loss: 1.6635)
+  #9: 90e6223b-00000000.jpg (loss: 1.5883)
+  #10: 80c62ee8-d23ef245.jpg (loss: 1.4993)
+
+=== Summary ===
+  Visualizations saved: runs/test/visualizations (50 images)
+  Hard examples saved:  runs/test/hard_examples (10 images)
+  Metrics file:         runs/test/evaluation_metrics.json
+
+Done!

@@ -1,0 +1,81 @@
+Loading model from runs/train/last.pt...
+YOLOPv2 created: 23.4M parameters
+  Loaded epoch 99 checkpoint
+Loading evaluation dataset (split=train, require_labels=True)...
+Loading BDD100K train labels...
+  Found 3426 seg images, 3426 with det labels (train, require_labels=True)
+  3426 evaluation images
+YOLOPv2 created: 23.4M parameters
+
+=== Running Evaluation ===
+  Processed 160/3426 images...
+  Processed 320/3426 images...
+  Processed 480/3426 images...
+  Processed 640/3426 images...
+  Processed 800/3426 images...
+  Processed 960/3426 images...
+  Processed 1120/3426 images...
+  Processed 1280/3426 images...
+  Processed 1440/3426 images...
+  Processed 1600/3426 images...
+  Processed 1760/3426 images...
+  Processed 1920/3426 images...
+  Processed 2080/3426 images...
+  Processed 2240/3426 images...
+  Processed 2400/3426 images...
+  Processed 2560/3426 images...
+  Processed 2720/3426 images...
+  Processed 2880/3426 images...
+  Processed 3040/3426 images...
+  Processed 3200/3426 images...
+  Processed 3360/3426 images...
+
+Evaluation completed in 69.1s (49.6 img/s)
+
+=== Computing Detection mAP (total GT boxes: 67622) ===
+  mAP@0.5      (all 10 classes): 0.6763
+  mAP@0.5:0.95 (all 10 classes): 0.4039
+  Per-class AP:
+    car             AP@0.5: 0.7104  AP@0.5:0.95: 0.4812
+    bus             AP@0.5: 0.8813  AP@0.5:0.95: 0.6410
+    truck           AP@0.5: 0.8904  AP@0.5:0.95: 0.6547
+    person          AP@0.5: 0.6172  AP@0.5:0.95: 0.3089
+    rider           AP@0.5: 0.7065  AP@0.5:0.95: 0.3618
+    bike            AP@0.5: 0.6998  AP@0.5:0.95: 0.3650
+    motor           AP@0.5: 0.7653  AP@0.5:0.95: 0.4632
+    traffic light   AP@0.5: 0.5032  AP@0.5:0.95: 0.2053
+    traffic sign    AP@0.5: 0.5847  AP@0.5:0.95: 0.3087
+    train           AP@0.5: 0.4048  AP@0.5:0.95: 0.2492
+  Vehicle (car/bus/truck) mAP@0.5:      0.8273
+  Vehicle (car/bus/truck) mAP@0.5:0.95: 0.5923
+
+=== Segmentation Metrics ===
+  Drivable Area:
+    mIoU:     0.9472
+    Accuracy: 0.9873
+    BG IoU:   0.9854  DA IoU: 0.9090
+  Lane Line:
+    mIoU:     0.6932
+    Accuracy: 0.9923
+    BG IoU:   0.9923  LL IoU: 0.3942
+
+  Metrics saved to runs/test/labeled_train/evaluation_metrics.json
+
+=== Hard Example Mining (top 10) ===
+  #1: 79105e65-a1c48df8.jpg (loss: 1.2863)
+  #2: baf019d9-da5f9843.jpg (loss: 1.2340)
+  #3: 2c4e4802-bfbb9299.jpg (loss: 1.2338)
+  #4: 4f45d5ce-d87a28f1.jpg (loss: 1.2335)
+  #5: 0f9fbe4b-081bb395.jpg (loss: 1.2288)
+  #6: 2bcdafa3-0013d653.jpg (loss: 1.2282)
+  #7: 07576c3b-32ef9ee1.jpg (loss: 1.2261)
+  #8: 33c6cbe6-d0aca98e.jpg (loss: 1.2233)
+  #9: 75cdb8c0-08de301f.jpg (loss: 1.2217)
+  #10: 2e3e8698-72305bda.jpg (loss: 1.2076)
+
+=== Summary ===
+  Visualizations saved: runs/test/labeled_train/visualizations (50 images)
+  Hard examples saved:  runs/test/labeled_train/hard_examples (10 images)
+  Metrics file:         runs/test/labeled_train/evaluation_metrics.json
+
+Done!

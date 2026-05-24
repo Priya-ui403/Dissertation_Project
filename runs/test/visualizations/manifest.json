@@ -1,0 +1,21 @@
+{
+  "random_sample_count": 50,
+  "challenging_conditions": {
+    "night": {
+      "matched_images": 137,
+      "saved": 12,
+      "filter": "attributes.timeofday == 'night'"
+    },
+    "rain": {
+      "matched_images": 253,
+      "saved": 12,
+      "filter": "attributes.weather == 'rainy'"
+    },
+    "crowded": {
+      "matched_images": 372,
+      "saved": 12,
+      "filter": "#box2d labels >= 33"
+    }
+  },
+  "output_root": "runs/test/visualizations"
+}
