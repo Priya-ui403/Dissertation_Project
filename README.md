@@ -49,8 +49,7 @@ The model is trained and evaluated on the **BDD100K** dataset — one of the lar
 
 The dataset is **not included** in this repository because of its large size (~7 GB+). It can be obtained from:
 
-- Official BDD100K website: <https://bdd-data.berkeley.edu/>
-- Kaggle mirror: <https://www.kaggle.com/datasets/solesensei/solesensei_bdd100k>
+- Kaggle: <https://www.kaggle.com/datasets/solesensei/solesensei_bdd100k>
 
 After downloading, the data should be placed inside `data/bdd100k/` following the standard BDD100K subfolder convention (images, detection annotations, drivable-area masks, and lane-line masks for `train`, `val`, and `test` splits).
 
