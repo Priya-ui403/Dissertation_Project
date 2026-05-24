@@ -1,5 +1,12 @@
 # Car Object Detection & Segmentation
 
+<p align="center">
+  <em>M.Tech Dissertation</em><br>
+  <strong>Indian Institute of Technology Roorkee</strong>
+</p>
+
+---
+
 A comparative study of three deep-learning pipelines for detecting cars in road / traffic images:
 
 1. **YOLOv8** — modern single-stage detector (Ultralytics).
