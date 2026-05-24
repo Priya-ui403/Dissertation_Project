@@ -1,0 +1,28 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+
+# --- Virtual environments ---
+.venv/
+venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Datasets (do NOT commit raw images) ---
+data/training_images/
+data/testing_images/
+
+# --- YOLO / Ultralytics runs ---
+runs/
+yolov8*.pt
+*.cache
+
+# --- Logs ---
+*.log

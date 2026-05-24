@@ -1,0 +1,14 @@
+# Git LFS — large model files
+*.keras  filter=lfs diff=lfs merge=lfs -text
+*.h5     filter=lfs diff=lfs merge=lfs -text
+*.pt     filter=lfs diff=lfs merge=lfs -text
+*.pth    filter=lfs diff=lfs merge=lfs -text
+*.onnx   filter=lfs diff=lfs merge=lfs -text
+*.tflite filter=lfs diff=lfs merge=lfs -text
+
+# Normalise line endings for source files
+*.py    text eol=lf
+*.ipynb text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.csv   text eol=lf
